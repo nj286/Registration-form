@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+<script src="JS/nav.js"></script>
+</head>
+<body>
+
+  <div class="split1 left">
+  
+    <ul style="list-style-type:none;" >
+      <li class = "list" onclick="return navigate('about')">About</li>
+      <li class = "list" onclick="return navigate('register')">Register</li>
+      <li class = "list" onclick="return navigate('search')">Search</li>
+      <li class = "list" onclick="return navigate('contacts')">Contact</li>
+    </ul>
+  </div>
+
+  <div class="split2 right">
+    <div id = "register" class="register">  
+      <h2 class="title">Registration form</h2>
+
+      <div class = "form ">
+        <div class="marker" id="marker" >
+          <img class = "img1" id = "img1" src="image/tick1.png"></img>
+          <div class="regmsg">
+            <span id = "msg">idiot idiot idiot</span>
+          </div>
+          
+        </div>
+        
+        <form action="Idon'tknowyet" id="myform" class="myform" name= "myForm">
+          <label for="fname" class="label1">First name</label><br>
+          <input type="text" class="inputfield" id="fname" name="fname" value=""  onblur = "validateName(event)"><br>
+          <span class= "errfield" id = "errfname">&nbsp;</span>
+   
+          <br>
+
+          
+          <label for="lname" class="label1">Last name</label><br>
+          <input type="text" class="inputfield" id="lname" name="lname" value=""  onblur = "validateName(event)"><br>
+          <span class= "errfield" id = "errlname">&nbsp;</span>
+          <br>
+
+          <label for="contactnumber" class="label1">Contact number</label><br>
+          <input type="text" class="inputfield" id="contact" name="contact" value="" maxlength = "10" onblur = "validateNumber(event)"><br>
+          <span class= "errfield" id = "errcontact">&nbsp;</span>
+          <br>
+
+          <label for="email ID" class="label1">Email ID</label><br>
+          <input type="email" class="inputfield" id="email" name="email" value=""  onblur = "validateEmail(event)"><br>
+          <span class= "errfield" id = "erremail">&nbsp;</span>
+          <br>
+
+          <label for="address" class="label1">Address</label><br>
+          <input type="text" class="inputfield" id="address" name="address" value="" onblur = "validateAddress(event)" ><br>
+          <span class= "errfield" id = "erraddr">&nbsp;</span>
+          <br>
+
+          <label for="ssn" class="label1">SSN</label><br>
+          <input class="inputfield" type="text" id="ssn" name="ssn" value="" maxlength = "9" onblur = "validateSSN(event)"><br>
+          <span class= "errfield" id = "errssn">&nbsp;</span><br>
+
+          <input type="checkbox" id="checkbox1" onclick="handleClick(this)" class = "checkbox1" name="checkbox1">
+          <label for="checkbox1">Please read the terms and condition </label><br>
+          <br>
+        </form> 
+        <span class= "license" id = "license">&nbsp;</span>
+      </div>
+      
+      <div class = "button-div">
+        <Button id = "submit"  class="button" onclick="RegisterUser()" disabled> Submit </Button>
+      </div>
+    </div>
+
+    <div  id="about" class="about">  
+  
+            <h2 class="title">About registration form</h2>
+  
+    </div>
+
+    <div id="search" class="search">  
+  
+      <h2 class="search_title">Search Users</h2>
+      <div class="row">
+          <div id="searchByName" class="searchByName">
+              <label class="username" for="username">User name</label>
+              <input class="username" type="text" id="username" name="username" value="" size=20 >
+              <input class="usernamebutton" id = "usernamebutton" type="button" onclick="searchName(document.getElementById('username').value)" value="Search" >
+          </div>
+
+          <div id="searchByAddress" class="searchByAddress">
+              <label class="username" for="address">User address</label>
+              <input class="username" type="text" id="useraddress" name="useraddress" value="" size=20 >
+              <input class="usernamebutton" id ="useraddressbutton" type="button" onclick="searchAddress(document.getElementById('useraddress').value)" value="Search" >
+          </div>
+      </div>
+      <div class="row">
+          <div id="searchByName" class="searchByName">
+                <span class= "userdata" id = "errmsgname">&nbsp;</span>
+          </div>
+
+          <div id="searchByAddress" class="searchByAddress">
+                <span class= "userdata" id = "errmsgaddr">&nbsp;</span>
+          </div>
+      </div>
+      <div id = "table1" class="table1"> </div>
+    </div>
+
+    <div  id="contacts" class="Contact">  
+         <h2 class="title">About registration form</h2>
+    </div>
+
+  </div>
+</div>   
+</body>
+</html> 

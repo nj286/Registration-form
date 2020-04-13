@@ -1,0 +1,225 @@
+body {
+	font-family: Arial;
+	color: white;
+  }
+  
+.split1 {
+	height: 100%;
+	width: 22%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+
+.split2 {
+	height: 100%;
+	width: 78%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+
+.left {
+	left: 0;
+	background-color: #e75d53;
+	font-size: 18px;
+  }
+  
+.right {
+	right: 0;
+	background-color:white;
+
+  }
+
+  /* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title{
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+
+.form{
+	font-size: 14px;
+	width: 25%; 
+	margin: auto; 
+	color: black;
+}
+
+.userdata{
+	font-size: 16px;
+	margin-left: 10px;
+	text-align: left;
+	color: #86170f;
+}
+
+input{
+	height: 18px;
+	width: 100%; 
+}
+
+.button-div{
+	text-align: center;	
+}
+
+.button{
+    width: 125px;
+	height:30px;
+	background-color: #e38a84;
+	border-color: #e38a84;
+    text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 15px; 
+}
+
+.list{
+	
+	text-align: center;
+	margin-top:5px;
+	padding: 7px;
+	background-color: #e38a84;
+	color:white;
+} 
+
+ul{
+	padding-inline-start: 0;
+}
+
+.register{
+	display: none;
+}
+.search{
+	display: none;
+}
+
+.about{
+	display: inherit;
+}
+
+.Contact{
+	display: none;
+}
+
+.search_title{
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+
+.username{
+	font-size: 16px;
+	width: 20%;
+	height: 25px ;
+	margin: 10px;
+	
+}	
+.usernamebutton{
+	background-color: #bf4d45;
+	border-color: #bf4d45;
+	width: 20%;
+	height: 25px ;
+}
+
+.searchform
+{
+	width: 100%;	
+}
+
+.myform
+{
+	text-align: left;
+}
+
+.label1
+{
+	text-align: left;
+    width: 100%;
+    float: left;
+}
+
+.searchByAddress{
+	float: left;
+	width: 50%;
+	color: black;
+}
+
+.searchByName{
+	float: left;
+	width: 50%;
+	color: black;
+	
+} 
+
+table{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 15%;
+	border-collapse: collapse;
+	font-size: 18px;
+	text-align: center;	
+	border-spacing: 10px;
+	color: black;
+}
+td, th {
+	border: 1px solid #000000;
+	text-align: left;
+	padding: 8px;
+  }
+
+.checkbox1{
+	margin-top: 20px;
+    height: 14px;
+    width: 25px;
+}
+
+.errfield
+{
+	text-align: right;
+	float: right;
+	color: #66100a;
+}
+
+.marker
+{
+	width: 100%;
+    margin-bottom: 20px;
+	padding-left: 10px;
+	height: 25px;
+	background-color: white;
+	border-radius: 10px;
+	display: none;
+}
+
+.img1
+{
+	width: 20px;
+	height: 20px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	float: left;
+}
+
+.regmsg
+{
+	font-size: 16px;
+	color: #59a070;
+	margin-top: 3.5px;
+	margin-left: 8px;
+	float: left;
+}
